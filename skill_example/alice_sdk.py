@@ -52,5 +52,8 @@ class AliceResponse(object):
     def set_buttons(self, buttons):
         self._response_dict['response']['buttons'] = buttons
 
+    def set_end_session(self, flag):
+        self._response_dict['response']['end_session'] = flag
+
     def __str__(self):
         return self.dumps()
